@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #zy{
+            width: 600px;
+            height: 800px;
+            background: yellow;
+            margin: 0 auto;
+            position: relative;
+            background-image: url('./img/4.jpg');
+            background-size: 600px 800px;
+        }
+        #zy .tx{
+            width:150px;
+            height:150px;
+            border-radius: 50%;
+            background: red;
+            position: absolute;
+            top:100px;
+            right: 150px;
+        }
+        #zy .tx .txtp{
+            width:150px;
+            height:150px;
+            border-radius: 50%;
+        }
+        #zy .bt{
+            font-size: 60px;
+            position: absolute;
+            top:300px;
+            right: 160px;
+            color: #19B761;
+
+        }
+        #zy .name{
+            width: 200px;
+            height:50px;
+            /* background: firebrick; */
+            position: absolute;
+            top:400px;
+            right: 120px;
+            border-top:#19B761 solid 3px;
+            border-bottom: #19B761 solid 3px;
+            font-size: 30px;
+            line-height: 50px;
+            text-align: center;
+            /* display: block; */
+        }
+
+        #zy .xq{
+            font-size: 20px;
+            color: #19B761;
+            position: absolute;
+            top:100px;
+            left: 50px;
+            line-height: 80px;
+            display: none
+        }
+
+        #zy .zp{
+            width:500px;
+            height: 200;
+            /* background: red; */
+            position: absolute;
+            left: 50px;
+            bottom: 200px;
+            color: #19B761;
+            display: none;
+
+
+        }
+
+
+
+
+        #zy:hover{
+            background-image: url('./img/7.jpg');
+            transform:all 5s linear ;
+        }
+        #zy:hover .bt{
+            display: none;
+        }
+        #zy:hover .name{
+            border-top:#19B761 solid 0px;
+            border-bottom: #19B761 solid 0px;
+            color: #19B761;
+            
+        }
+
+        #zy:hover .xq{
+            display: block;
+        }
+
+        #zy:hover .zp{
+            display: block;
+        }
+    
+    
+    </style>
+
+</head>
+<body>
+    <div id="zy"  >
+        <div class="tx">
+            <img class="txtp" src="./img/5.jpg">
+        </div>
+        <div class="bt">简历</div>
+        <div class="name">
+            赵志成
+        </div>
+        <div class="xq">
+           <p>name：赵志成</p>
+            <p>学历：大专</p> 
+            <p>专业：数控技术</p>
+            <p>电话：123566788987</p>
+            <p>E-mai:1413518990@qq.com</p> 
+        </div>
+        <div class="zp">本人乐观向上，爱好广泛，拥有较强的适应能力，并具有良好的身体素质。与同学相处和睦融洽，乐于助人，对工作踏实，认真负责，学习能力强，能较好完成任务。注重团队合作，能够积极参加学校及班级组织的活动，并能在活动中充分发挥出自己的作用。</div>
+    </div>
+</body>
+<script>
+     window.onload = function(event){
+    let tx = document.getElementsByClassName('tx');
+    tx.onclick=function(){
+        alert('fdd')
+    }
+}
+</script>
+</html>
